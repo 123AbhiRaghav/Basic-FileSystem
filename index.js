@@ -14,10 +14,10 @@ const date = timedate.toLocaleDateString("en-US", {
 console.log(date)
 const tdate = date.split("-").join("");
 
-// const filename = tdate + "/" + ttime;
+ const filename = tdate + "/" + ttime;
 
 //Question 1: 
-fs.writeFile('./files/date-time.txt',time, (err) => {
+fs.writeFile("./files/date-time.txt",time, (err) => {
  if(err){
     console.log('error')
  } else {
